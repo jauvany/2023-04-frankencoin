@@ -4,5 +4,10 @@ test = "test"
 out = "artifacts"
 libs = ["lib"]
 ignored_error_codes = ["license", "shadowing", "unused-return", "unused-param", "unused-var"]
+gas_reports = ["*"]
+
+[fuzz]
+runs = 300000
+seed = 2234
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
